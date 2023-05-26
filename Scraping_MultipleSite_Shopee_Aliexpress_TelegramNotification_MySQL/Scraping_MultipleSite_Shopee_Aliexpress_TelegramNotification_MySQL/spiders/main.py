@@ -5,7 +5,6 @@ from scrapy.shell import inspect_response
 from pprint import pprint
 import os
 from dotenv import load_dotenv
-from api_key import API_KEY
 # Rotating proxy
 # API key imported from env
 # Obtain your API key from
@@ -14,7 +13,7 @@ def configure():
 
 configure()
 from scraper_api import ScraperAPIClient
-client = ScraperAPIClient(os.getenv(API_KEY))
+client = ScraperAPIClient(os.getenv('API_KEY'))
 
 
 
@@ -63,11 +62,11 @@ class MainSpider(scrapy.Spider):
         )
 
     def parse(self, response):
-        inspect_response(response, self)
-        # raw_data = response.body
-        # data = json.loads(raw_data)
-        # pprint(data)
-        # item = {
-        #     'Name' : data["data"]["sections"][0]["data"]["item"][0]["name"]
-        # }
-        # yield item
+        # inspect_response(response, self)
+        raw_data = response.body
+        data = json.loads(raw_data)
+        pprint(data)
+        item = {
+            'Name' : data["data"]["sections"][0]["data"]["item"][0]["name"]
+        }
+        yield item
