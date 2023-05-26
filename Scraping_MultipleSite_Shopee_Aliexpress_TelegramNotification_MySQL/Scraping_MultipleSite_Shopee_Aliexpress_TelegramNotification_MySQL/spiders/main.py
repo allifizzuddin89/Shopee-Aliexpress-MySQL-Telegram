@@ -3,11 +3,12 @@ import scrapy
 from scrapy import Request
 from scrapy.shell import inspect_response
 from pprint import pprint
+from api_key import API_KEY
 # Rotating proxy
 # API key imported from env
 # Obtain your API key from
 from scraper_api import ScraperAPIClient
-client = ScraperAPIClient('YOUR_API_KEY')
+client = ScraperAPIClient(API_KEY)
 
 
 
