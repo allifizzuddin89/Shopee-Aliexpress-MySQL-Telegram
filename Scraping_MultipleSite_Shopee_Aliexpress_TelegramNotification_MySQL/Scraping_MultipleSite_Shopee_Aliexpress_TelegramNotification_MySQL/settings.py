@@ -64,7 +64,11 @@ ROBOTSTXT_OBEY = False
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
 #    "Scraping_MultipleSite_Shopee_Aliexpress_TelegramNotification_MySQL.pipelines.ScrapingMultiplesiteShopeeAliexpressTelegramnotificationMysqlPipeline": 300,
-#}
+#}Scraping_MultipleSite_Shopee_Aliexpress_TelegramNotification_MySQL/Scraping_MultipleSite_Shopee_Aliexpress_TelegramNotification_MySQL/pipelines.py
+ITEM_PIPELINES = {
+#    "trader_joes_inventory.pipelines.TraderJoesInventoryPipeline": 300,
+   "Scraping_MultipleSite_Shopee_Aliexpress_TelegramNotification_MySQL.pipelines.ScrapingMultiplesiteShopeeAliexpressTelegramnotificationMysqlPipeline" : 250
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
