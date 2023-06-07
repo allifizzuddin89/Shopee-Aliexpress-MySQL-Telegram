@@ -22,7 +22,7 @@
 ```
   - Create working environment (skip if already have any working environment)
 ```bash
-  conda create --name scraping_env -c conda-forge python=3.10.13 scrapy=2.7.1
+  conda create --name scraping_env -c conda-forge python=3.10.13 scrapy=2.9.0
 ```
 - Activate the working environment
 ```bash
