@@ -30,7 +30,8 @@
 ```
  - Run the spider
  ```bash
- scrapy runspider Scraping_MultipleSite_Shopee_Aliexpress_TelegramNotification_MySQL/Scraping_MultipleSite_Shopee_Aliexpress_TelegramNotification_MySQL/spiders/main.py
+ scrapy runspider Shopee-Aliexpress-MySQL-Telegram/Scraping_MultipleSite_Shopee_Aliexpress_TelegramNotification_MySQL/Scraping_MultipleSite_Shopee_Aliexpress_TelegramNotification_MySQL/spiders/main.py
+ 
  ```
  
  ## Troubleshoot
